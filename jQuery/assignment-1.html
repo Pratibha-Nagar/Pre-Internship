@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $(".square").hide();
+            });
+          });
+    </script>
+    <style>
+        .square{
+            width:100px; height:100px; background-color:tomato;
+        }
+    </style>
+</head>
+<body>
+   <div class="square"></div> 
+   <p>Hide the red box on button click</p>
+   <button>Click me</button>
+</body>
+</html>

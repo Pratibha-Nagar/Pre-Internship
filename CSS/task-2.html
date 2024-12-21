@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        color: #fff;
+        text-align: center;
+        margin: 0;
+        font-size: 20px;
+        font-weight: bold;
+
+    }
+    div {
+        box-sizing: border-box;
+        margin: 2px;
+    }
+    #header{
+        background-color: rgb(58, 148, 148);
+        padding: 20px;
+        min-height: 20px;
+    }
+    #main {
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+        min-height: 400px;
+        box-sizing: border-box;
+    }
+    .sidebar {
+        background-color: rgb(114, 196, 0);
+        min-width: 30%;
+        min-height:400px;
+    }
+    .content {
+        flex-direction: column;
+        min-width: 70%;
+        box-sizing: border-box;
+    }
+    .sidebar, .content > div {
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+        text-align: center;
+    }
+    .box1 {
+        background-color: gold;
+        min-height: 298px;
+        box-sizing: border-box;
+    }
+    .box2{
+        background-color: gray;
+        min-height: 100px;
+        box-sizing: border-box;
+        margin-top: 1px;
+    }
+    #footer {
+        background-color: orange;
+        padding: 20px;
+        min-height: 20px;
+    }
+</style>
+<body>
+    <div class="container">
+        <div id="header">Header</div>
+        <div id="main">
+            <div class="sidebar">Sidebar</div>
+            <div class="content">
+                <div class="box1">Main Content</div>
+                <div class="box2">Extra Content</div>
+            </div>
+        </div>
+        <div id="footer">Footer</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $(".btn").click(function(){
+                $(".slide").slideDown();
+            }) 
+        })
+    </script>
+    <style>
+        .btn {
+            background-color: rgb(172, 214, 104);
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+        .slide{
+            background-color: rgb(166, 202, 237);
+            padding: 50px;
+            text-align: center;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="btn">Click me to slide down panel</div>
+    <div class="slide">Hello World!</div>
+</body>
+</html>
